@@ -5,38 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock Tunmi</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="conatiner">
+    <div class="container">
+      <div class="clock-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</div>
       <h1>World Clock</h1>
 
-      <select name="" id="">
-        <option value="select a City"></option>
+      <select>
+        <option value="select a City">Select a City</option>
         <option value="London">London</option>
         <option value="New York">New York</option>
         <option value="Lagos">Lagos</option>
       </select>
 
       <div class="cities">
-        <h2>Los Angeles</h2>
-        <div class="date">May 31st,2025.</div>
-        <div class="time">12:55 PM</div>
-      </div>
-      <div class="cities">
-        <h2>Lagos</h2>
-        <div class="date">May 31st,2025.</div>
-        <div class="time">12:55 PM</div>
-      </div>
-    </div>
+  <div class="city-info">
+    <h2>Los Angeles</h2>
+    <div class="date">May 31st, 2025.</div>
+  </div>
+  <div class="time">12:55 <small>AM</small></div>
+</div>
+
+<div class="cities">
+  <div class="city-info">
+    <h2>Lagos</h2>
+    <div class="date">May 31st, 2025.</div>
+  </div>
+  <div class="time">12:55 <small>AM</small></div>
+</div>
+
 
     <footer>
-      This project is coded with 💗💗 by TunmiDev, and it's open source on
+      This project is coded with 💗 by TunmiDev, and it's open source on
       <a href="https://github.com/TunmiDev/world-clock" target="_blank"
-        >github</a
+        >GitHub</a
       >
-      and it's hosted on
-      <a href="https://world-clock-lilac.vercel.app/" target="_blank">vercel</a>
+      and hosted on
+      <a href="https://world-clock-lilac.vercel.app/" target="_blank">Vercel</a
+      >.
     </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
