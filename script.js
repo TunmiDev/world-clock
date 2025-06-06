@@ -30,6 +30,20 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Canada Time Update
+  let CanadaElement = document.querySelector("#Canada");
+  if (canadaElement) {
+    let caadaDateElement = lagosElement.querySelector(".date");
+    let canadaTimeElement = lagosElement.querySelector(".time");
+
+    let canadaTime = moment().tz("Africa/Lagos");
+
+    canadaDateElement.innerHTML = canadaTime.format("dddd, MMMM Do YYYY");
+    canadTimeElement.innerHTML = canadaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
